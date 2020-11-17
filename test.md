@@ -108,12 +108,36 @@
 問3:for文で10回"Hello World"を表示したい。使用する変数を「i」とした時のfor文を作成しなさい。  
 (作成範囲はforから閉じカッコまでで良い)(配点:6点)  
 
-問4:変数isWhichに。(配点:2点)  
-1. なんとなく。
-1. 本来javaの作成は自分だけではない、ほかの誰かが見ても波カッコ内の記述をわかりやすくするため。
-1. インデントがないとエラーが起きるため。
+問4:変数isWhichに真偽のデータ(true false)を格納したい。以下の選択肢の内、使用する変数の型として正しいものを選択せよ。(配点:2点)  
+1. 「int」
+1. 「boolean」
+1. 「String」
 
+問4:if文を用いて変数numに格納された数値が0以上、10以下か判定し、  
+trueなら「OK!」、falseなら「NO!」を表示するようにしたい。  
+閉じカッコとインデントに気を付けて、if文を記述しなさい。  
+(変数numの宣言と数値代入はすでに終わってるものとする。)(配点:10点)  
 
-
+問5:二次配列の練習として以下のプログラムを作成した。プログラムの内容から抜けている箇所を推測し、  
+正しい記述に修正しなさい。(配点:各2点)
+import java.util.*;  
+public class Lesson{  
+&#9public static void main(String[] args){  
+		int num = 0;  
+		System.out.print("数を入力(1～9まで)> ");  
+		num = new Scanner(System.in).nextInt();  
+		int[][] kuku = new int[num][9];  
+		for(int i=0;i<kuku.length;i++){  
+			for(int j=0;j<kuku[i].length;j++){  
+				kuku[i][j]=(i+1)*(j+1);  
+				System.out.printf("%3d",kuku[i][j]);  
+				if(j != 8){  
+					System.out.print("|");  
+				}  
+			}  
+			System.out.println();  
+		}  
+	}  
+}  
 
 
