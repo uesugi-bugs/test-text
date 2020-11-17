@@ -122,18 +122,18 @@ trueなら「OK!」、falseなら「NO!」を表示するようにしたい。
 正しい記述に修正しなさい。(配点:各2点)  
 
 ```java
-import ①.util.*;  
+import (1).util.*;  
 public class Lesson{  
 	public static void main(String[] args){  
 		int num = 0;  
 		System.out.print("数を入力(1～9まで)> ");  
-		num = new ②(System.in).nextInt();  
-		int[][] kuku = new int[③][9];  
+		num = new (2)(System.in).nextInt();  
+		int[][] kuku = new int[(3)][9];  
 		for(int i=0;i<kuku.length;i++){  
 			for(int j=0;j<kuku[i].length;j++){  
-				kuku[i][j]=④;  
+				kuku[i][j]=(4);  
 				System.out.printf("%3d",kuku[i][j]);  
-				if(j ⑤ 8){  
+				if(j (5) 8){  
 					System.out.print("|");  
 				}  
 			}  
@@ -141,5 +141,44 @@ public class Lesson{
 		}  
 	}  
 }  
+```
+(1)=  
+(2)=  
+(3)=  
+(4)=  
+(5)=  
+
+
+問5:以下のプログラムを作成したところ、エラーが発生した。エラーが起きた個所を選択し、正しいプログラムを記述しなさい。(配点:10点)  
+
+
+```
+  1 //ランダムに「まどか」を出力するプログラム
+  2 //ただし、変数homuraの値が10を超えないといけない
+  3 public class homura{
+  4   public static void main(String[] args){
+  5     //変数homuraに0を代入する。
+  6     int homura = 0;
+  7     int madoka = 0;
+  8     while(true){
+  9       if(homura < 10){
+ 10         homura += 1;
+ 11         System.out.println("私は何度でもやり直す");
+ 12       }else if(homura >10 || madoka ==1){
+ 13         System.out.println("まどか");
+ 14         break;
+ 15       }else{
+ 16         homura += 1;
+ 17         System.out.println("私は何度でもやり直す");
+ 18         int qb = new java.util.Random().nextInt(10);
+ 19         if(qb == 9){
+ 20           madoka +=1;
+ 21           System.out.println("私もう迷わない");
+ 22         }
+ 23       
+ 24     }
+ 25   }
+ 26 }
+
 ```
 
