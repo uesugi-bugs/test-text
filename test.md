@@ -122,18 +122,18 @@ trueなら「OK!」、falseなら「NO!」を表示するようにしたい。
 正しい記述に修正しなさい。(配点:各2点)  
 
 ```java
-import java.util.*;  
+import ①.util.*;  
 public class Lesson{  
 	public static void main(String[] args){  
 		int num = 0;  
 		System.out.print("数を入力(1～9まで)> ");  
-		num = new Scanner(System.in).nextInt();  
-		int[][] kuku = new int[num][9];  
+		num = new ②(System.in).nextInt();  
+		int[][] kuku = new int[③][9];  
 		for(int i=0;i<kuku.length;i++){  
 			for(int j=0;j<kuku[i].length;j++){  
-				kuku[i][j]=(i+1)*(j+1);  
+				kuku[i][j]=④;  
 				System.out.printf("%3d",kuku[i][j]);  
-				if(j != 8){  
+				if(j ⑤ 8){  
 					System.out.print("|");  
 				}  
 			}  
