@@ -119,10 +119,12 @@ trueなら「OK!」、falseなら「NO!」を表示するようにしたい。
 (変数numの宣言と数値代入はすでに終わってるものとする。)(配点:10点)  
 
 問5:二次配列の練習として以下のプログラムを作成した。プログラムの内容から抜けている箇所を推測し、  
-正しい記述に修正しなさい。(配点:各2点)
+正しい記述に修正しなさい。(配点:各2点)  
+
+```java
 import java.util.*;  
 public class Lesson{  
-&#9public static void main(String[] args){  
+	public static void main(String[] args){  
 		int num = 0;  
 		System.out.print("数を入力(1～9まで)> ");  
 		num = new Scanner(System.in).nextInt();  
@@ -139,5 +141,5 @@ public class Lesson{
 		}  
 	}  
 }  
-
+```
 
