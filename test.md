@@ -157,7 +157,7 @@ public class Lesson{
   2 //ただし、変数homuraの値が10を超えないといけない。
   3 //また、変数madokaに1が代入されたとき、
   4 //変数qbにランダムに値を入力し、一致したとき出力する。
-  5 public class homura{
+  5 public class Homura{
   6   public static void main(String[] args){
   7     //変数homuraとmadokaに0を代入する。
   8     int homura = 0;
